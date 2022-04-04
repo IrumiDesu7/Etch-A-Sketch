@@ -13,3 +13,10 @@ for (let i = 1; i <= 16; i++) {
     gridDiv.appendChild(grid);
   }
 }
+
+const gridItems = document.querySelectorAll('.grid');
+gridItems.forEach((e) =>
+  e.addEventListener('mouseover', function () {
+    e.classList.add('color');
+  })
+);
