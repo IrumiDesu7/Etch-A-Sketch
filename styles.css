@@ -1,22 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+  /* border: 2px dashed blue; */
+}
 
 body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .row-container {
   display: flex;
+  flex: 1;
 }
 
 .grid {
   background-color: #f39a61;
-  border: 2px solid #f9faf8;
+  border: 1px solid #f9faf8;
   color: #ffffff;
+  width: auto;
+  height: auto;
   flex: 1;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .grid.color {
   background-color: #d35462;
+}
+
+.clear-button {
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+  background-color: #ab8aac;
+  color: #f9faf8;
+  font-weight: 900;
+  font-size: 15px;
+  border: 0;
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+
+.clear-button:hover {
+  background-color: #d35462;
+  transform: scale(1.1, 1.1);
+}
+
+#slider {
+  margin: 13px;
+  -webkit-appearance: none;
+  background: #fcf3cf;
+  width: 50%;
+  height: 20px;
+  opacity: 2;
+  border-radius: 20px;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #34495e;
+  width: 20%;
+  height: 20px;
+  border-radius: 20px;
 }
