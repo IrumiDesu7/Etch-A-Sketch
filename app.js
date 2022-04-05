@@ -10,7 +10,9 @@ const containerDiv = document.createElement('div');
 containerDiv.classList.add('container');
 document.body.appendChild(containerDiv);
 let gridDiv, grid;
-let gridSize = prompt('Enter grid size a by a : ');
+let gridSize = prompt(
+  'Enter grid size a by a. Value higher than 100 might crash your browser.  '
+);
 if (gridSize > 100) {
   console.log('no');
 }
